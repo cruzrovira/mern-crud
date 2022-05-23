@@ -4,12 +4,17 @@
   "private": true,
   "description": "",
   "main": "index.js",
-  "workspaces":[
-    "backend", 
+  "workspaces": [
+    "backend",
     "frontend"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "backend:dev": "npm run dev --workspace=backend",
+    "backend:build": "npm run build --workspace=backend",
+    "backend:start": "npm run start --workspace=backend",
+    "frontend:dev": "npm run dev --workspace=frontend",
+    "frontend:build": "npm run  build --workspace=frontend",
+    "frontend:preview": "npm run preview --workspace=frontend"
   },
   "keywords": [],
   "author": "",
